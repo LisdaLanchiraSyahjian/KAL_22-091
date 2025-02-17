@@ -1,10 +1,15 @@
 # Komputasi Aljabar Linier
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
+Materi ini aka mempelajari tentang Komputasi Aljabar Linier.
 
+Komputasi Aljabar Linier adalah bidang dalam matematika dan ilmu komputer yang berfokus pada penyelesaian masalah yang melibatkan vektor, matriks, dan sistem persamaan linear menggunakan metode komputasi. Materi ini mencakup:
+
+Operasi Matriks dan Vektor – Penjumlahan, perkalian, invers, transpose, determinan, dan bentuk khusus seperti matriks identitas dan diagonal.
+Sistem Persamaan Linear (SPL) – Penyelesaian menggunakan eliminasi Gauss, metode matriks balikan, dan metode numerik lainnya.
+Faktorisasi Matriks – Seperti LU, QR, dan SVD yang digunakan untuk berbagai aplikasi, termasuk optimasi dan machine learning.
+Eigenvalue dan Eigenvector – Konsep penting dalam analisis data, pemrosesan sinyal, dan komputasi ilmiah.
+Penerapan Komputasi – Digunakan dalam kecerdasan buatan, grafika komputer, pemrosesan citra, ekonomi, dan banyak bidang teknik lainnya.
+Biasanya, komputasi aljabar linier dilakukan dengan bantuan perangkat lunak seperti MATLAB, NumPy (Python), atau R untuk menangani perhitungan skala besar secara efisien.
 Check out the content pages bundled with this sample book to see more.
 
 ```{tableofcontents}
