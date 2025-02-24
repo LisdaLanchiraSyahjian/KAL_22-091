@@ -48,7 +48,7 @@ x_1+2x_3&=6
 $
 
 #### Penyelesaian
-##### Soal 1
+#### Soal 1
 
 $
 \left[
@@ -80,7 +80,7 @@ $
 \right]
 $
 
-##### Soal 3
+#### Soal 3
 
 $
 \left[
