@@ -57,6 +57,7 @@ $$
 $$
 
 hitung baris kedua
+
 $$
 \begin{array}{cc}
 R_2 → R_2-2R_1
@@ -64,6 +65,7 @@ R_2 → R_2-2R_1
 $$
 
 maka akan menghasilkan
+
 $$
 \left[
 \begin{array}{ccc|c}
@@ -75,6 +77,7 @@ $$
 $$
 
 Soal 3
+
 $$
 \left[
 \begin{array}{cc|c}
@@ -85,12 +88,15 @@ $$
 $$
 
 hitung baris pertama
+
 $$
 \begin{array}{cc}
 R_1 → R_1-2R_2
 \end{array}
 $$
+
 maka akan menghasilkan
+
 $$
 \left[
 \begin{array}{cc|c}
