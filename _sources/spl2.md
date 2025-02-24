@@ -5,6 +5,8 @@ title: spl2
 
 ## Penyelesaian Sistem Persamaan Linier
 ### Operasi Baris Elementer
+Operasi baris elementer (OBE) adalah operasi yang dilakukan pada baris suatu matriks untuk mengubahnya menjadi bentuk yang lebih sederhana. OBE dapat digunakan untuk menyelesaikan sistem persamaan linear (SPL) dan menentukan invers matriks. 
+
 ### Eliminasi Gaus
 Eliminasi Gauss adalah algoritma yang digunakan untuk menyelesaikan sistem persamaan linear (SPL). Algoritma ini mengubah matriks koefisien SPL menjadi matriks segitiga atas. 
 
