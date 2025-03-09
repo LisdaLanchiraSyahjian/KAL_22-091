@@ -519,6 +519,79 @@ A sama dengan jumlah baris pada
 B.</p>
 <section id="contoh-code-untuk-operasi-matriks">
 <h4>Contoh Code Untuk Operasi Matriks<a class="headerlink" href="#contoh-code-untuk-operasi-matriks" title="Link to this heading">#</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Definisi matriks</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> 
+              <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>
+
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> 
+              <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">]])</span>
+
+<span class="c1"># Penjumlahan Matriks</span>
+<span class="n">penjumlahan</span> <span class="o">=</span> <span class="n">A</span> <span class="o">+</span> <span class="n">B</span>
+
+<span class="c1"># Pengurangan Matriks</span>
+<span class="n">pengurangan</span> <span class="o">=</span> <span class="n">A</span> <span class="o">-</span> <span class="n">B</span>
+
+<span class="c1"># Perkalian Matriks</span>
+<span class="n">perkalian</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>  <span class="c1"># atau bisa juga menggunakan A @ B</span>
+
+<span class="c1"># Menampilkan hasil</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Matriks A:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Matriks B:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hasil Penjumlahan:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">penjumlahan</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hasil Pengurangan:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">pengurangan</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hasil Perkalian:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">perkalian</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Matriks A:
+ [[1 2]
+ [3 4]]
+Matriks B:
+ [[5 6]
+ [7 8]]
+Hasil Penjumlahan:
+ [[ 6  8]
+ [10 12]]
+Hasil Pengurangan:
+ [[-4 -4]
+ [-4 -4]]
+Hasil Perkalian:
+ [[19 22]
+ [43 50]]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Cek apakah kolom selain &#39;Week&#39; memang berisi NaN sebelum normalisasi</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Data sebelum normalisasi:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_slide_cleaned</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Data sebelum normalisasi:
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">3</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Cek apakah kolom selain &#39;Week&#39; memang berisi NaN sebelum normalisasi</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Data sebelum normalisasi:&quot;</span><span class="p">)</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="nb">print</span><span class="p">(</span><span class="n">df_slide_cleaned</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+
+<span class="ne">NameError</span>: name &#39;df_slide_cleaned&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 </section>
 </section>
