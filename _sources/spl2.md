@@ -113,6 +113,59 @@ $
 $
 
 
+# **Matriks**
 
+Matriks adalah susunan bilangan berbentuk persegi panjang yang diatur dalam baris dan kolom. Matriks biasanya digunakan dalam berbagai bidang seperti matematika, fisika, dan ilmu komputer untuk merepresentasikan sistem persamaan linear, transformasi geometris, dan operasi lainnya.
+
+## Operasi Matrik
+
+###P enjumlahan
+
+Dua matriks dapat dijumlahkan jika memiliki ukuran yang sama. Penjumlahan dilakukan dengan menjumlahkan elemen-elemen yang sesuai.
+
+### Pengurangan
+
+Pengurangan dilakukan dengan cara yang sama seperti penjumlahan, tetapi dengan mengurangi elemen-elemen yang sesuai.
+
+### Perkalian
+
+Perkalian matriks 
+𝐴
+A dan 
+𝐵
+B hanya dapat dilakukan jika jumlah kolom pada 
+𝐴
+A sama dengan jumlah baris pada 
+𝐵
+B.
+
+#### Contoh Code Untuk Operasi Matriks
+
+```{code-cell} python
+import numpy as np
+
+# Definisi matriks
+A = np.array([[1, 2], 
+              [3, 4]])
+
+B = np.array([[5, 6], 
+              [7, 8]])
+
+# Penjumlahan Matriks
+penjumlahan = A + B
+
+# Pengurangan Matriks
+pengurangan = A - B
+
+# Perkalian Matriks
+perkalian = np.dot(A, B)  # atau bisa juga menggunakan A @ B
+
+# Menampilkan hasil
+print("Matriks A:\n", A)
+print("Matriks B:\n", B)
+print("Hasil Penjumlahan:\n", penjumlahan)
+print("Hasil Pengurangan:\n", pengurangan)
+print("Hasil Perkalian:\n", perkalian)
+```
 
 
