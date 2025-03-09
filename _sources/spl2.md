@@ -142,6 +142,7 @@ B.
 #### Contoh Code Untuk Operasi Matriks
 
 ```{code-cell} python
+
 import numpy as np
 
 # Definisi matriks
@@ -166,6 +167,7 @@ print("Matriks B:\n", B)
 print("Hasil Penjumlahan:\n", penjumlahan)
 print("Hasil Pengurangan:\n", pengurangan)
 print("Hasil Perkalian:\n", perkalian)
+
 ```
 
 
