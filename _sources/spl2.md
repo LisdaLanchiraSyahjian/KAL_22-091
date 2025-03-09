@@ -179,10 +179,4 @@ print("Hasil Pengurangan:\n", pengurangan)
 print("Hasil Perkalian:\n", perkalian)
 ```
 
-```{code-cell} python
-# Cek apakah kolom selain 'Week' memang berisi NaN sebelum normalisasi
-print("Data sebelum normalisasi:")
-print(df_slide_cleaned.head())
-```
-
 
