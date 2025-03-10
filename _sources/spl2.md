@@ -11,7 +11,6 @@ kernelspec:
   display_name: Python 3
   language: python
   name: python3
-
 ---
 
 ## Penyelesaian Sistem Persamaan Linier
@@ -130,7 +129,7 @@ Matriks adalah susunan bilangan berbentuk persegi panjang yang diatur dalam bari
 
 ## Operasi Matrik
 
-###P enjumlahan
+### Penjumlahan
 
 Dua matriks dapat dijumlahkan jika memiliki ukuran yang sama. Penjumlahan dilakukan dengan menjumlahkan elemen-elemen yang sesuai.
 
