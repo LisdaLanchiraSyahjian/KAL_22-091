@@ -178,4 +178,150 @@ print("Hasil Pengurangan:\n", pengurangan)
 print("Hasil Perkalian:\n", perkalian)
 ```
 
+## Penyelesaian Baris Elementer
+\documentclass{article}
+\usepackage{amsmath, amssymb}
+\begin{document}
+
+\title{Penyelesaian Sistem Persamaan Linear dengan Operasi Baris Elementer}
+\author{Menggunakan Eliminasi Gauss}
+\date{\today}
+\maketitle
+
+\section*{Soal}
+Diberikan sistem persamaan linear dalam bentuk matriks augmented:
+
+\[
+\begin{bmatrix}
+1 & 2 & -1 & | & 3 \\
+2 & 3 & 1 & | & 7 \\
+1 & -1 & 2 & | & 2
+\end{bmatrix}
+\]
+
+Gunakan operasi baris elementer untuk menyelesaikan sistem ini.
+
+\section*{Penyelesaian}
+
+\subsection*{Langkah 1: Membuat Elemen (1,1) menjadi 1}
+Matriks awal sudah memiliki pivot 1 di posisi (1,1), sehingga tidak perlu perubahan:
+
+\[
+\begin{bmatrix}
+1 & 2 & -1 & | & 3 \\
+2 & 3 & 1 & | & 7 \\
+1 & -1 & 2 & | & 2
+\end{bmatrix}
+\]
+
+\subsection*{Langkah 2: Membuat Elemen di Bawah Pivot Menjadi 0}
+
+Operasi baris:
+\begin{align*}
+R_2 &\leftarrow R_2 - 2R_1 \\
+R_3 &\leftarrow R_3 - R_1
+\end{align*}
+
+Hasilnya:
+
+\[
+\begin{bmatrix}
+1 & 2 & -1 & | & 3 \\
+0 & -1 & 3 & | & 1 \\
+0 & -3 & 3 & | & -1
+\end{bmatrix}
+\]
+
+\subsection*{Langkah 3: Membuat Elemen (2,2) Menjadi 1}
+
+Bagi baris kedua dengan -1:
+
+\[
+R_2 \leftarrow -R_2
+\]
+
+Sehingga diperoleh:
+
+\[
+\begin{bmatrix}
+1 & 2 & -1 & | & 3 \\
+0 & 1 & -3 & | & -1 \\
+0 & -3 & 3 & | & -1
+\end{bmatrix}
+\]
+
+\subsection*{Langkah 4: Membuat Elemen di Bawah Pivot (Kolom 2) Menjadi 0}
+
+Operasi:
+\[
+R_3 \leftarrow R_3 + 3R_2
+\]
+
+Hasilnya:
+
+\[
+\begin{bmatrix}
+1 & 2 & -1 & | & 3 \\
+0 & 1 & -3 & | & -1 \\
+0 & 0 & -6 & | & -4
+\end{bmatrix}
+\]
+
+\subsection*{Langkah 5: Membuat Elemen (3,3) Menjadi 1}
+
+Bagi baris ketiga dengan -6:
+
+\[
+R_3 \leftarrow \frac{R_3}{-6}
+\]
+
+Sehingga diperoleh:
+
+\[
+\begin{bmatrix}
+1 & 2 & -1 & | & 3 \\
+0 & 1 & -3 & | & -1 \\
+0 & 0 & 1 & | & \frac{2}{3}
+\end{bmatrix}
+\]
+
+\subsection*{Langkah 6: Substitusi Mundur}
+Dari baris ketiga:
+\[
+z = \frac{2}{3}
+\]
+
+Dari baris kedua:
+\[
+y - 3z = -1
+\]
+\[
+y - 3\left(\frac{2}{3}\right) = -1
+\]
+\[
+y - 2 = -1 \Rightarrow y = 1
+\]
+
+Dari baris pertama:
+\[
+x + 2y - z = 3
+\]
+\[
+x + 2(1) - \frac{2}{3} = 3
+\]
+\[
+x = 3 - 2 + \frac{2}{3} = \frac{4}{3}
+\]
+
+\subsection*{Jawaban Akhir}
+\[
+\begin{cases}
+x = \frac{4}{3} \\
+y = 1 \\
+z = \frac{2}{3}
+\end{cases}
+\]
+
+\end{document}
+
 

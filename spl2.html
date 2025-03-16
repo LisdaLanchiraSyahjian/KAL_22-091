@@ -383,6 +383,7 @@
 </li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penyelesaian-baris-elementer">Penyelesaian Baris Elementer</a></li>
 </ul>
 </li>
 </ul>
@@ -576,6 +577,123 @@ Hasil Perkalian:
 </section>
 </section>
 </section>
+<section id="penyelesaian-baris-elementer">
+<h2>Penyelesaian Baris Elementer<a class="headerlink" href="#penyelesaian-baris-elementer" title="Link to this heading">#</a></h2>
+<p>\documentclass{article}
+\usepackage{amsmath, amssymb}
+\begin{document}</p>
+<p>\title{Penyelesaian Sistem Persamaan Linear dengan Operasi Baris Elementer}
+\author{Menggunakan Eliminasi Gauss}
+\date{\today}
+\maketitle</p>
+<p>\section*{Soal}
+Diberikan sistem persamaan linear dalam bentuk matriks augmented:</p>
+<p>[
+\begin{bmatrix}
+1 &amp; 2 &amp; -1 &amp; | &amp; 3 \
+2 &amp; 3 &amp; 1 &amp; | &amp; 7 \
+1 &amp; -1 &amp; 2 &amp; | &amp; 2
+\end{bmatrix}
+]</p>
+<p>Gunakan operasi baris elementer untuk menyelesaikan sistem ini.</p>
+<p>\section*{Penyelesaian}</p>
+<p>\subsection*{Langkah 1: Membuat Elemen (1,1) menjadi 1}
+Matriks awal sudah memiliki pivot 1 di posisi (1,1), sehingga tidak perlu perubahan:</p>
+<p>[
+\begin{bmatrix}
+1 &amp; 2 &amp; -1 &amp; | &amp; 3 \
+2 &amp; 3 &amp; 1 &amp; | &amp; 7 \
+1 &amp; -1 &amp; 2 &amp; | &amp; 2
+\end{bmatrix}
+]</p>
+<p>\subsection*{Langkah 2: Membuat Elemen di Bawah Pivot Menjadi 0}</p>
+<p>Operasi baris:
+\begin{align*}
+R_2 &amp;\leftarrow R_2 - 2R_1 \
+R_3 &amp;\leftarrow R_3 - R_1
+\end{align*}</p>
+<p>Hasilnya:</p>
+<p>[
+\begin{bmatrix}
+1 &amp; 2 &amp; -1 &amp; | &amp; 3 \
+0 &amp; -1 &amp; 3 &amp; | &amp; 1 \
+0 &amp; -3 &amp; 3 &amp; | &amp; -1
+\end{bmatrix}
+]</p>
+<p>\subsection*{Langkah 3: Membuat Elemen (2,2) Menjadi 1}</p>
+<p>Bagi baris kedua dengan -1:</p>
+<p>[
+R_2 \leftarrow -R_2
+]</p>
+<p>Sehingga diperoleh:</p>
+<p>[
+\begin{bmatrix}
+1 &amp; 2 &amp; -1 &amp; | &amp; 3 \
+0 &amp; 1 &amp; -3 &amp; | &amp; -1 \
+0 &amp; -3 &amp; 3 &amp; | &amp; -1
+\end{bmatrix}
+]</p>
+<p>\subsection*{Langkah 4: Membuat Elemen di Bawah Pivot (Kolom 2) Menjadi 0}</p>
+<p>Operasi:
+[
+R_3 \leftarrow R_3 + 3R_2
+]</p>
+<p>Hasilnya:</p>
+<p>[
+\begin{bmatrix}
+1 &amp; 2 &amp; -1 &amp; | &amp; 3 \
+0 &amp; 1 &amp; -3 &amp; | &amp; -1 \
+0 &amp; 0 &amp; -6 &amp; | &amp; -4
+\end{bmatrix}
+]</p>
+<p>\subsection*{Langkah 5: Membuat Elemen (3,3) Menjadi 1}</p>
+<p>Bagi baris ketiga dengan -6:</p>
+<p>[
+R_3 \leftarrow \frac{R_3}{-6}
+]</p>
+<p>Sehingga diperoleh:</p>
+<p>[
+\begin{bmatrix}
+1 &amp; 2 &amp; -1 &amp; | &amp; 3 \
+0 &amp; 1 &amp; -3 &amp; | &amp; -1 \
+0 &amp; 0 &amp; 1 &amp; | &amp; \frac{2}{3}
+\end{bmatrix}
+]</p>
+<p>\subsection*{Langkah 6: Substitusi Mundur}
+Dari baris ketiga:
+[
+z = \frac{2}{3}
+]</p>
+<p>Dari baris kedua:
+[
+y - 3z = -1
+]
+[
+y - 3\left(\frac{2}{3}\right) = -1
+]
+[
+y - 2 = -1 \Rightarrow y = 1
+]</p>
+<p>Dari baris pertama:
+[
+x + 2y - z = 3
+]
+[
+x + 2(1) - \frac{2}{3} = 3
+]
+[
+x = 3 - 2 + \frac{2}{3} = \frac{4}{3}
+]</p>
+<p>\subsection*{Jawaban Akhir}
+[
+\begin{cases}
+x = \frac{4}{3} \
+y = 1 \
+z = \frac{2}{3}
+\end{cases}
+]</p>
+<p>\end{document}</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -664,6 +782,7 @@ Hasil Perkalian:
 </li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penyelesaian-baris-elementer">Penyelesaian Baris Elementer</a></li>
 </ul>
 </li>
 </ul>
