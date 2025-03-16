@@ -203,115 +203,32 @@ Gunakan operasi baris elementer untuk menyelesaikan sistem ini.
 
 \section*{Penyelesaian}
 
-\subsection*{Langkah 1: Membuat Elemen (1,1) menjadi 1}
-Matriks awal sudah memiliki pivot 1 di posisi (1,1), sehingga tidak perlu perubahan:
+\subsection*{Kode Python untuk Penyelesaian} 
+Berikut adalah implementasi dalam Python menggunakan numpy untuk eliminasi Gauss:
 
-\[
-\begin{bmatrix}
-1 & 2 & -1 & | & 3 \\
-2 & 3 & 1 & | & 7 \\
-1 & -1 & 2 & | & 2
-\end{bmatrix}
-\]
+\begin{verbatim}
+import numpy as np
 
-\subsection*{Langkah 2: Membuat Elemen di Bawah Pivot Menjadi 0}
+# Matriks augmented
+A = np.array([[1, 2, -1, 3],
+              [2, 3, 1, 7],
+              [1, -1, 2, 2]], dtype=float)
 
-Operasi baris:
-\begin{align*}
-R_2 &\leftarrow R_2 - 2R_1 \\
-R_3 &\leftarrow R_3 - R_1
-\end{align*}
+n = len(A)
 
-Hasilnya:
+# Eliminasi Gauss
+for i in range(n):
+    A[i] = A[i] / A[i, i]  # Buat pivot menjadi 1
+    for j in range(i + 1, n):
+        A[j] = A[j] - A[j, i] * A[i]
 
-\[
-\begin{bmatrix}
-1 & 2 & -1 & | & 3 \\
-0 & -1 & 3 & | & 1 \\
-0 & -3 & 3 & | & -1
-\end{bmatrix}
-\]
+# Substitusi mundur
+x = np.zeros(n)
+for i in range(n-1, -1, -1):
+    x[i] = A[i, -1] - np.sum(A[i, i+1:n] * x[i+1:n])
 
-\subsection*{Langkah 3: Membuat Elemen (2,2) Menjadi 1}
-
-Bagi baris kedua dengan -1:
-
-\[
-R_2 \leftarrow -R_2
-\]
-
-Sehingga diperoleh:
-
-\[
-\begin{bmatrix}
-1 & 2 & -1 & | & 3 \\
-0 & 1 & -3 & | & -1 \\
-0 & -3 & 3 & | & -1
-\end{bmatrix}
-\]
-
-\subsection*{Langkah 4: Membuat Elemen di Bawah Pivot (Kolom 2) Menjadi 0}
-
-Operasi:
-\[
-R_3 \leftarrow R_3 + 3R_2
-\]
-
-Hasilnya:
-
-\[
-\begin{bmatrix}
-1 & 2 & -1 & | & 3 \\
-0 & 1 & -3 & | & -1 \\
-0 & 0 & -6 & | & -4
-\end{bmatrix}
-\]
-
-\subsection*{Langkah 5: Membuat Elemen (3,3) Menjadi 1}
-
-Bagi baris ketiga dengan -6:
-
-\[
-R_3 \leftarrow \frac{R_3}{-6}
-\]
-
-Sehingga diperoleh:
-
-\[
-\begin{bmatrix}
-1 & 2 & -1 & | & 3 \\
-0 & 1 & -3 & | & -1 \\
-0 & 0 & 1 & | & \frac{2}{3}
-\end{bmatrix}
-\]
-
-\subsection*{Langkah 6: Substitusi Mundur}
-Dari baris ketiga:
-\[
-z = \frac{2}{3}
-\]
-
-Dari baris kedua:
-\[
-y - 3z = -1
-\]
-\[
-y - 3\left(\frac{2}{3}\right) = -1
-\]
-\[
-y - 2 = -1 \Rightarrow y = 1
-\]
-
-Dari baris pertama:
-\[
-x + 2y - z = 3
-\]
-\[
-x + 2(1) - \frac{2}{3} = 3
-\]
-\[
-x = 3 - 2 + \frac{2}{3} = \frac{4}{3}
-\]
+print("Solusi:", x)
+\end{verbatim}
 
 \subsection*{Jawaban Akhir}
 \[
@@ -323,5 +240,3 @@ z = \frac{2}{3}
 \]
 
 \end{document}
-
-
