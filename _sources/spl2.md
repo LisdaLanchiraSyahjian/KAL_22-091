@@ -187,16 +187,17 @@ Selesaikan sistem persamaan linear berikut:
 $
 \left[
 \begin{array}{cc}
-x_1 + x_2 &= 5 \\
-x_1 + 2x_3 &= 6
+x_1 + x_2 & = 5 \\
+x_1 + 2x_3 & = 6
 \end{array}
 \right]
+$
 
-\section*{Penyelesaian}
+**Penyelesaian**
 
 Kita menyusun sistem ini dalam bentuk augmented matrix:
 
-\[
+$
 \left[
 \begin{array}{ccc|c}
 1 & 2 & 3 & 6 \\
@@ -204,19 +205,19 @@ Kita menyusun sistem ini dalam bentuk augmented matrix:
 0 & 1 & 1 & 2
 \end{array}
 \right]
-\]
+$
 
-\subsection*{Langkah 1: Eliminasi Baris Kedua}
+Langkah 1: Eliminasi Baris Kedua
 
 Gunakan operasi baris elementer:
-
+$
 \[
 R_2 \to R_2 - 2R_1
 \]
+$
 
 Maka matriks menjadi:
-
-\[
+$
 \left[
 \begin{array}{ccc|c}
 1 & 2 & 3 & 6 \\
@@ -224,10 +225,6 @@ Maka matriks menjadi:
 0 & 1 & 1 & 2
 \end{array}
 \right]
-\]
-
+$
 Karena baris kedua menjadi baris nol, kita melihat bahwa sistem ini memiliki **dependensi linear** dan dapat disederhanakan lebih lanjut.
 
-\end{document}
-
-$
