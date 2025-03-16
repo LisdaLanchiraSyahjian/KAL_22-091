@@ -179,64 +179,55 @@ print("Hasil Perkalian:\n", perkalian)
 ```
 
 ## Penyelesaian Baris Elementer
-\documentclass{article}
-\usepackage{amsmath, amssymb}
-\begin{document}
 
-\title{Penyelesaian Sistem Persamaan Linear dengan Operasi Baris Elementer}
-\author{Menggunakan Eliminasi Gauss}
-\date{\today}
-\maketitle
+**Soal 1**
 
-\section*{Soal}
-Diberikan sistem persamaan linear dalam bentuk matriks augmented:
+Selesaikan sistem persamaan linear berikut:
 
-\[
-\begin{bmatrix}
-1 & 2 & -1 & | & 3 \\
-2 & 3 & 1 & | & 7 \\
-1 & -1 & 2 & | & 2
-\end{bmatrix}
-\]
-
-Gunakan operasi baris elementer untuk menyelesaikan sistem ini.
+$
+\left[
+\begin{array}{cc}
+x_1 + x_2 &= 5 \\
+x_1 + 2x_3 &= 6
+\end{array}
+\right]
 
 \section*{Penyelesaian}
 
-\subsection*{Kode Python untuk Penyelesaian} 
-Berikut adalah implementasi dalam Python menggunakan numpy untuk eliminasi Gauss:
+Kita menyusun sistem ini dalam bentuk augmented matrix:
 
-\begin{verbatim}
-import numpy as np
-
-# Matriks augmented
-A = np.array([[1, 2, -1, 3],
-              [2, 3, 1, 7],
-              [1, -1, 2, 2]], dtype=float)
-
-n = len(A)
-
-# Eliminasi Gauss
-for i in range(n):
-    A[i] = A[i] / A[i, i]  # Buat pivot menjadi 1
-    for j in range(i + 1, n):
-        A[j] = A[j] - A[j, i] * A[i]
-
-# Substitusi mundur
-x = np.zeros(n)
-for i in range(n-1, -1, -1):
-    x[i] = A[i, -1] - np.sum(A[i, i+1:n] * x[i+1:n])
-
-print("Solusi:", x)
-\end{verbatim}
-
-\subsection*{Jawaban Akhir}
 \[
-\begin{cases}
-x = \frac{4}{3} \\
-y = 1 \\
-z = \frac{2}{3}
-\end{cases}
+\left[
+\begin{array}{ccc|c}
+1 & 2 & 3 & 6 \\
+2 & 4 & 6 & 12 \\
+0 & 1 & 1 & 2
+\end{array}
+\right]
 \]
 
+\subsection*{Langkah 1: Eliminasi Baris Kedua}
+
+Gunakan operasi baris elementer:
+
+\[
+R_2 \to R_2 - 2R_1
+\]
+
+Maka matriks menjadi:
+
+\[
+\left[
+\begin{array}{ccc|c}
+1 & 2 & 3 & 6 \\
+0 & 0 & 0 & 0 \\
+0 & 1 & 1 & 2
+\end{array}
+\right]
+\]
+
+Karena baris kedua menjadi baris nol, kita melihat bahwa sistem ini memiliki **dependensi linear** dan dapat disederhanakan lebih lanjut.
+
 \end{document}
+
+$
