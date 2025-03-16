@@ -210,6 +210,7 @@ $
 Langkah 1: Eliminasi Baris Kedua
 
 Gunakan operasi baris elementer:
+
 $
 \[
 R_2 \to R_2 - 2R_1
@@ -217,6 +218,7 @@ R_2 \to R_2 - 2R_1
 $
 
 Maka matriks menjadi:
+
 $
 \left[
 \begin{array}{ccc|c}
@@ -226,5 +228,6 @@ $
 \end{array}
 \right]
 $
+
 Karena baris kedua menjadi baris nol, kita melihat bahwa sistem ini memiliki **dependensi linear** dan dapat disederhanakan lebih lanjut.
 
