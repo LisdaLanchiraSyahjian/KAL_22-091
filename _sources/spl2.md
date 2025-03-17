@@ -211,9 +211,9 @@ Langkah 1: Eliminasi Baris Kedua
 Gunakan operasi baris elementer:
 
 $
-\[
+\begin{array}{cc}
 R_2 \to R_2 - 2R_1
-\]
+\end{array}
 $
 
 Maka matriks menjadi:
