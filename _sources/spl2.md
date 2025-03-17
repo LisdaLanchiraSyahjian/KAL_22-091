@@ -274,8 +274,8 @@ Dari matriks ini, kita memiliki:
 
 $
 \begin{array}{cc}
-1. x_1+2x_3&=6 → x_1&=-2x_3+6\\
-2. x_2-2x_3&=-1 → x_2&=2x_3-1\\
+1. x_1+2x_3&=6 → x_1&=-2x_3+6 \\
+2. x_2-2x_3&=-1 → x_2&=2x_3-1 \\
 3. x_3&=t
 \end{array}
 $
