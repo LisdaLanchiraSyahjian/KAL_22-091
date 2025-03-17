@@ -200,9 +200,8 @@ Kita menyusun sistem ini dalam bentuk augmented matrix:
 $
 \left[
 \begin{array}{ccc|c}
-1 & 2 & 3 & 6 \\
-2 & 4 & 6 & 12 \\
-0 & 1 & 1 & 2
+1 & 1 & 0 & 5 \\
+1 & 0 & 2 & 6
 \end{array}
 \right]
 $
@@ -222,12 +221,61 @@ Maka matriks menjadi:
 $
 \left[
 \begin{array}{ccc|c}
-1 & 2 & 3 & 6 \\
-0 & 0 & 0 & 0 \\
-0 & 1 & 1 & 2
+1 & 1 & 0 & 5 \\
+0 & -1 & 2 & 1
 \end{array}
 \right]
 $
 
-Karena baris kedua menjadi baris nol, kita melihat bahwa sistem ini memiliki **dependensi linear** dan dapat disederhanakan lebih lanjut.
+Langkah 3: Normalisasi Baris Kedua
 
+Kalikan baris kedua dengan -1
+
+$
+\begin{array}{cc}
+R_2 → -R_2
+\end{array}
+$
+
+sehingga diperoleh
+
+$
+\left[
+\begin{array}{ccc|c}
+1 & 1 & 0 & 5 \\
+0 & 1 & -2 & -1
+\end{array}
+\right]
+$
+
+Langkah 4: Eliminasi Elemen di Atas Pivot Kedua
+
+Kurangi baris pertama dengan baris kedua:
+
+$
+\begin{array}{cc}
+R_1 → R_1 - R_2
+\end{array}
+$
+
+HASILNYA
+
+$
+\left[
+\begin{array}{ccc|c}
+1 & 0 & 2 & 6 \\
+0 & 1 & -2 & -1
+\end{array}
+\right]
+$
+
+Langkah 5: Menuliskan Solusi dalam Bentuk Parametrik
+Dari matriks ini, kita memiliki:
+
+$
+\begin{array}{cc}
+1. x_1+2x_3&=6 → x_1&=-2x_3+6\\
+2. x_2-2x_3&=-1 → x_2&=2x_3-1\\
+3. x_3&=t
+\end{array}
+$
