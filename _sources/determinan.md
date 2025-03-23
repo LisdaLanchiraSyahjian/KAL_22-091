@@ -1,3 +1,18 @@
+---
+title: determinan
+jupytext:
+  formats: md:myst
+  text_representation:
+    extension: .md
+    format_name: myst
+    format_version: '0.13'
+    jupytext_version: '1.11.5'
+kernelspec:
+  display_name: Python 3
+  language: python
+  name: python3
+---
+
 # Determinan Matrik
 
 Determinant (determinan) matriks adalah suatu nilai skalar yang dihitung dari elemen-elemen sebuah matriks persegi (matriks dengan jumlah baris dan kolom yang sama). Determinan memberikan informasi penting tentang sifat-sifat matriks tersebut, seperti apakah matriks tersebut memiliki invers atau tidak. Determinan memiliki sifat-sifat determinan yaitu matrik singular dan non singular. Matrik disebut singular jika tidak  meiliki invers, sedangkan matrik disebut nonsingular jika memiliki invers. Cara menghitung determinan ada berbagai metode, jika ordo matrik 2x2 dapoat dihitung dengan cara : 
@@ -42,7 +57,7 @@ Cofaktor dalam matriks adalah bilangan yang diperoleh dari minor suatu elemen da
 1. Pilih elemen 𝑎𝑖𝑗 dalam matriks.
 2. Hapus baris ke-𝑖 dan kolom ke-𝑗 dari matriks tersebut.
 3. Hitung determinannya (ini disebut minor 𝑀𝑖𝑗).
-4. Kalikan hasil minor dengan $(-1)^i+j$ untuk mendapatkan kofaktor Cij.
+4. Kalikan hasil minor dengan $(-1)^i^+j$ untuk mendapatkan kofaktor Cij.
 
 
 ### Mencari Determinan dengan Konsep Minor dan Cofaktor Matrik
@@ -95,6 +110,6 @@ $
 
 *M*11 =(5×9)−(6×8)=45−48=−3
 
-- Kalikan dengan tanda $(-1)^1+1$ = 1 :
+- Kalikan dengan tanda $(-1)^1^+1$ = 1 :
 *C*11 = 1 x (-3) = -3
 

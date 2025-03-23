@@ -14,6 +14,11 @@ kernelspec:
 ---
 
 # Penyelesaian Sistem Persamaan Linier
+Persamaan Linier adalah persamaan matematika di mana variabel-variabelnya berpangkat satu (linier) dan tidak ada perkalian antar variabel.
+
+## Solusi Persamaan Linier
+<iframe scrolling="no" title="Solving Systems Using Substitution" src="https://www.geogebra.org/material/iframe/id/u3QSv8dv/width/1922/height/1153/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="1922px" height="1153px" style="border:0px;"> </iframe>
+
 ### Operasi Baris Elementer
 Operasi baris elementer (OBE) adalah operasi yang dilakukan pada baris suatu matriks untuk mengubahnya menjadi bentuk yang lebih sederhana. OBE dapat digunakan untuk menyelesaikan sistem persamaan linear (SPL) dan menentukan invers matriks. 
 
