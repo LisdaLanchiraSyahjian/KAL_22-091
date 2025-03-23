@@ -30,7 +30,9 @@ $
 
 **det (A) = ad - bc**
 det (A) = (1X4) - (2X4)
+
         = 4 - 8 
+
         = -4
 **maka det (A) adalah -4**
 
@@ -112,4 +114,43 @@ $
 
 - Kalikan dengan tanda $(-1)^{1+1}$ = 1 :
 *C*11 = 1 x (-3) = -3
+
+**Contoh Soal dengan Matriks Ordo 4x4**
+
+$
+\left[
+\begin{array}{ccc|c}
+1 & 2 & 3 & 4 \\
+5 & 6 & 7 & 8 \\
+9 & 10 & 11 & 12 \\
+13 & 14 & 15 & 16 
+\end{array}
+\right]
+$
+
+**Menggunakan Minor Matriks**
+
+- hapus baris ke-1 kolom ke 1 maka *M*11 adalah
+
+$
+\left[
+\begin{array}{ccc|c}
+6 & 7 & 8 \\
+10 & 11 & 12 \\
+14 & 15 & 16 
+\end{array}
+\right]
+$
+
+- menghitung determinan matriks 3z3 
+
+det(*M*11) = 6⋅(11⋅16−12⋅15)−7⋅(10⋅16−12⋅14)+8⋅(10⋅15−11⋅14)
+             
+           =  6⋅(176−180)−7⋅(160−168)+8⋅(150−154)
+
+           =  6⋅(−4)−7⋅(−8)+8⋅(−4)
+
+           = −24+56−32
+
+           = 0
 
