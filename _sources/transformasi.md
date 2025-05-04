@@ -17,9 +17,9 @@ kernelspec:
 
 Transformasi linier adalah suatu fungsi yang memetakan vektor dari ruang berdimensi 
 𝑛
-n ke ruang berdimensi 
+ke ruang berdimensi 
 𝑚
-m, dan memenuhi dua sifat utama
+, dan memenuhi dua sifat utama
 
 **Contoh Transformasi Linier :**
 - Rotasi: memutar vektor terhadap titik asal.
